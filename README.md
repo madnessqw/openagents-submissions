@@ -1,2 +1,1 @@
-# openagents-submissions
-OpenAgents worker submission pipeline
+# Test submission - OpenAgents webhook test
