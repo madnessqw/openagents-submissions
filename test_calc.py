@@ -1,2 +1,7 @@
-from calc import add\ndef test_add(): assert
-  add(2,3)==5
+   from calc import add
+
+   def test_add():
+       assert add(2, 3) == 5
+   EOF
+
+
