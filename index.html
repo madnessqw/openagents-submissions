@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini Kafe Landing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Ana menü">
+      <a class="brand" href="#hero" aria-label="Mini Kafe ana sayfa">Mini Kafe</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menü</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">Hakkımızda</a>
+        <a href="#menu">Menü</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#reservation">Rezervasyon</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Mahalle kafeniz</p>
+        <h1>Sakin bir kahve, iyi bir tatlı, hızlı rezervasyon.</h1>
+        <p>Mini Kafe için tek sayfalık responsive landing page. Açık tema, smooth scroll, kart gridleri ve çalışan rezervasyon formu.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#menu">Menüyü Gör</a>
+          <a class="btn secondary" href="#reservation">Rezervasyon Yap</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Günün önerisi">
+        <span>Günün önerisi</span>
+        <strong>Flat White + Limonlu Cheesecake</strong>
+        <small>₺185</small>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">Hakkımızda</p>
+        <h2>Küçük ama özenli.</h2>
+      </div>
+      <p class="wide-text">Taze çekirdek, günlük tatlılar ve sakin çalışma masalarıyla Mini Kafe; kısa molalar, arkadaş buluşmaları ve laptopla çalışma için tasarlandı.</p>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">Menü</p>
+        <h2>Popüler ürünler</h2>
+      </div>
+      <div class="grid cards">
+        <article class="card"><h3>Espresso Tonic</h3><p>Canlı, ferah ve hafif narenciye aromalı.</p><strong>₺120</strong></article>
+        <article class="card"><h3>Cold Brew</h3><p>18 saat demlenmiş yumuşak içimli soğuk kahve.</p><strong>₺135</strong></article>
+        <article class="card"><h3>San Sebastian</h3><p>Kremamsı dokulu, günlük hazırlanan cheesecake.</p><strong>₺165</strong></article>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">Galeri</p>
+        <h2>Mekândan kareler</h2>
+      </div>
+      <div class="gallery-grid" aria-label="Kafe galeri kartları">
+        <div class="gallery-item">☕ Bar</div>
+        <div class="gallery-item">🍰 Tatlı</div>
+        <div class="gallery-item">🌿 Bahçe</div>
+        <div class="gallery-item">💻 Çalışma</div>
+      </div>
+    </section>
+
+    <section class="section reservation" id="reservation">
+      <div class="section-heading">
+        <p class="eyebrow">Rezervasyon</p>
+        <h2>Masani ayır.</h2>
+      </div>
+      <form class="reservation-form" id="reservation-form">
+        <label>Ad Soyad<input name="name" type="text" placeholder="Ada Lovelace" required></label>
+        <label>E-posta<input name="email" type="email" placeholder="ada@example.com" required></label>
+        <label>Tarih<input name="date" type="date" required></label>
+        <label>Kişi Sayısı<select name="people"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+        <button class="btn primary" type="submit">Rezervasyon Gönder</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Mini Kafe · Açık tema responsive landing page</footer>
+  <script src="script.js"></script>
+</body>
+</html>
