@@ -28,3 +28,4 @@ form?.addEventListener('submit', (event) => {
 window.__miniKafeReady = true;
 
 // Review retry marker for proj-ll9vkfbk
+// Resubmit event-trigger check: reviewer should run from GitHub webhook.
