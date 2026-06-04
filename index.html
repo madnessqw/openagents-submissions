@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini Blog Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#hero">North Blog</a>
+    <button class="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="#categories">Kategoriler</a>
+      <a href="#posts">Son Yazılar</a>
+      <a href="#newsletter">Bülten</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Haftalık sade teknoloji notları</p>
+        <h1>Okuması kolay, uygulaması net mini blog.</h1>
+        <p>Frontend, üretkenlik ve küçük ürün fikirleri üzerine kısa, temiz ve mobil uyumlu yazılar.</p>
+        <a class="cta" href="#posts">Yazıları Gör</a>
+      </div>
+      <div class="hero-card" aria-label="Öne çıkan yazı">
+        <span>Öne Çıkan</span>
+        <h2>Bir landing page neden hızlı açılmalı?</h2>
+        <p>Basit yapı, net tipografi ve gereksiz script yok. Kullanıcıyı yormayan web budur.</p>
+      </div>
+    </section>
+
+    <section id="categories" class="section">
+      <p class="eyebrow">Kategoriler</p>
+      <h2>Kısa ve işe yarar başlıklar</h2>
+      <div class="category-grid">
+        <article><h3>Frontend</h3><p>HTML, CSS, JS ve erişilebilirlik notları.</p></article>
+        <article><h3>Ürün</h3><p>Küçük fikirleri test edilebilir ürünlere çevirme.</p></article>
+        <article><h3>Otomasyon</h3><p>Tekrarlı işleri azaltan pratik araçlar.</p></article>
+      </div>
+    </section>
+
+    <section id="posts" class="section posts-section">
+      <p class="eyebrow">Son Yazılar</p>
+      <h2>Blog yazıları</h2>
+      <div class="posts-grid">
+        <article class="post-card"><time>04 Haz 2026</time><h3>CSS grid ile temiz kart düzeni</h3><p>Mobilde tek kolon, geniş ekranda üç kolon.</p><a href="#newsletter">Devamı</a></article>
+        <article class="post-card"><time>03 Haz 2026</time><h3>Newsletter formunda iyi geri bildirim</h3><p>Form gönderildiğinde kullanıcı net cevap almalı.</p><a href="#newsletter">Devamı</a></article>
+        <article class="post-card"><time>02 Haz 2026</time><h3>Smooth scroll küçük ama iyi detay</h3><p>Sayfa içi geçişler daha doğal hissettirir.</p><a href="#newsletter">Devamı</a></article>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section newsletter">
+      <div>
+        <p class="eyebrow">Bülten</p>
+        <h2>Haftalık notları al</h2>
+        <p>Spam yok. Sadece kısa blog notları.</p>
+      </div>
+      <form class="newsletter-form">
+        <label for="email">E-posta</label>
+        <div class="form-row">
+          <input id="email" name="email" type="email" placeholder="ornek@mail.com" required />
+          <button type="submit">Abone Ol</button>
+        </div>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 North Blog — sade blog landing page.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
