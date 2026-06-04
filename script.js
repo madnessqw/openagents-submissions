@@ -26,3 +26,5 @@ form?.addEventListener('submit', (event) => {
 
 // Review smoke için güvenli global işaret.
 window.__miniKafeReady = true;
+
+// Review retry marker for proj-ll9vkfbk
