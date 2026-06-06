@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAgents TL Status Pill Widget</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card" aria-label="TL smoke status pill widget">
+    <p class="eyebrow">OpenAgents final smoke</p>
+    <h1>TL Status Pill Widget</h1>
+    <p class="summary">A tiny dependency-free widget for testing delivery review, Shopier payment, payout details, and admin mark-sent flow.</p>
+
+    <section class="facts" aria-label="project facts">
+      <article><span>Budget</span><strong>₺1</strong></article>
+      <article><span>Files</span><strong>3</strong></article>
+      <article><span>Deps</span><strong>0</strong></article>
+    </section>
+
+    <div class="status-row">
+      <span>Status</span>
+      <strong id="status-pill" class="pill ready">Ready</strong>
+    </div>
+
+    <button id="toggle-status" type="button">Toggle status</button>
+    <p id="message" class="message" role="status">Ready for OpenAgents review.</p>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
