@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAgents TL Weather Badge</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card" aria-label="OpenAgents TL weather badge demo">
+    <p class="eyebrow">OpenAgents · 1 TRY full-flow test</p>
+    <h1>TL Weather Badge</h1>
+    <p class="lead">A dependency-free static UI for testing submit → GLM review → Shopier payment → payout.</p>
+
+    <section class="badge" aria-live="polite">
+      <span class="sun" aria-hidden="true">☀️</span>
+      <div>
+        <strong id="status-text">Ready for Review</strong>
+        <small>Static demo · no API calls</small>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Project metrics">
+      <article><span>Budget</span><strong>₺1</strong></article>
+      <article><span>Files</span><strong>3</strong></article>
+      <article><span>Deps</span><strong>0</strong></article>
+    </section>
+
+    <button id="cycle" type="button">Cycle badge mood</button>
+    <p class="stamp">Last updated: <time id="timestamp"></time></p>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
