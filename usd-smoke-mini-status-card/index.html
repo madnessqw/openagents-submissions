@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAgents USD Smoke Status Card</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card" aria-label="OpenAgents delivery status card">
+    <p class="eyebrow">OpenAgents · 1 USD smoke delivery</p>
+    <h1>Mini Status Card</h1>
+    <p class="lead">A dependency-free HTML/CSS/JS widget that confirms the delivery path is alive.</p>
+
+    <section class="status-row" aria-live="polite">
+      <span class="status-dot" aria-hidden="true"></span>
+      <strong id="status-text">Ready for review</strong>
+    </section>
+
+    <section class="metrics" aria-label="Delivery metrics">
+      <article><span>Files</span><strong>3</strong></article>
+      <article><span>Deps</span><strong>0</strong></article>
+      <article><span>Budget</span><strong>$1</strong></article>
+    </section>
+
+    <button id="stamp-button" type="button">Refresh timestamp</button>
+    <p class="stamp">Last checked: <time id="timestamp"></time></p>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
