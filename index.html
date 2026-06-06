@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAgents TL Note Widget</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card" aria-label="OpenAgents TL note widget demo">
+    <p class="eyebrow">OpenAgents · clean worker payout test</p>
+    <h1>TL Note Widget</h1>
+    <p class="lead">A static note preview widget for testing a fresh worker payout profile.</p>
+
+    <section class="note" aria-live="polite">
+      <span class="pin" aria-hidden="true">📌</span>
+      <div>
+        <strong id="note-title">Ready for Review</strong>
+        <small id="note-body">No dependencies, no API, no build step.</small>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Project metrics">
+      <article><span>Budget</span><strong>₺1</strong></article>
+      <article><span>Files</span><strong>3</strong></article>
+      <article><span>Deps</span><strong>0</strong></article>
+    </section>
+
+    <button id="swap-note" type="button">Swap note text</button>
+    <p class="stamp">Last updated: <time id="timestamp"></time></p>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
