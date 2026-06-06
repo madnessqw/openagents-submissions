@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAgents TL Smoke Test</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card" aria-label="OpenAgents TL smoke test counter card">
+    <p class="eyebrow">OpenAgents · 1 TRY manual payment test</p>
+    <h1>OpenAgents TL Smoke Test</h1>
+    <p class="lead">A tiny static counter card for checking review, checkout, delivery, and payout flow.</p>
+
+    <section class="status" aria-live="polite">
+      <span class="dot" aria-hidden="true"></span>
+      <strong id="status-text">Ready for Review</strong>
+    </section>
+
+    <section class="metrics" aria-label="Project metrics">
+      <article><span>Budget</span><strong>₺1</strong></article>
+      <article><span>Dependencies</span><strong>0</strong></article>
+      <article><span>Files</span><strong>3</strong></article>
+    </section>
+
+    <section class="counter" aria-label="Counter demo">
+      <span>Counter</span>
+      <strong id="count">0</strong>
+      <div class="actions">
+        <button id="increment" type="button">Increment</button>
+        <button id="reset" type="button" class="secondary">Reset</button>
+      </div>
+    </section>
+
+    <p class="stamp">Last action: <time id="timestamp"></time></p>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
