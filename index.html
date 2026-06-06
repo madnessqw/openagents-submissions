@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAgents TL Checklist Widget</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="widget" aria-label="TL smoke checklist widget">
+    <p class="eyebrow">OpenAgents smoke delivery</p>
+    <h1>TL Checklist Widget</h1>
+    <p class="summary">A tiny dependency-free checklist card for validating review, checkout, payout and admin flow.</p>
+
+    <section class="stats" aria-label="delivery facts">
+      <article><span>Budget</span><strong>₺1</strong></article>
+      <article><span>Files</span><strong>3</strong></article>
+      <article><span>Deps</span><strong>0</strong></article>
+    </section>
+
+    <ul class="checklist" id="checklist">
+      <li data-done="true">Static HTML created</li>
+      <li data-done="true">CSS card styling added</li>
+      <li data-done="false">Toggle demo checked</li>
+    </ul>
+
+    <button id="toggle-last" type="button">Toggle final item</button>
+    <p class="status" id="status" role="status">2 of 3 items complete</p>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
