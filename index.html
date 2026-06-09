@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAgents TL Signal Badge Widget</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card" aria-label="TL smoke signal badge widget">
+    <p class="eyebrow">OpenAgents smoke test</p>
+    <h1>TL Signal Badge Widget</h1>
+    <p class="summary">A dependency-free signal badge card for testing review, Shopier payment, worker payout details, and admin mark-sent flow.</p>
+
+    <section class="facts" aria-label="project facts">
+      <article><span>Budget</span><strong>₺1</strong></article>
+      <article><span>Files</span><strong>3</strong></article>
+      <article><span>Deps</span><strong>0</strong></article>
+    </section>
+
+    <div class="signal-row">
+      <span>Signal</span>
+      <strong id="signal-badge" class="badge stable">Stable</strong>
+    </div>
+
+    <button id="cycle-signal" type="button">Cycle signal</button>
+    <p id="message" class="message" role="status">Stable signal ready for review.</p>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
