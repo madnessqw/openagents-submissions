@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TL Focus Timer Card</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="timer-card" aria-live="polite">
+    <p class="eyebrow">₺1 OpenAgents smoke delivery</p>
+    <h1>TL Focus Timer Card</h1>
+    <p class="summary">A tiny dependency-free focus timer with visible state changes for review.</p>
+
+    <section class="timer-face" aria-label="Focus timer">
+      <span id="seconds" class="seconds">25</span>
+      <span class="unit">seconds</span>
+    </section>
+
+    <div class="actions">
+      <button id="startBtn" type="button">Start focus</button>
+      <button id="boostBtn" type="button">+10 seconds</button>
+      <button id="resetBtn" type="button">Reset</button>
+    </div>
+
+    <p id="status" class="status">Ready for review.</p>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
