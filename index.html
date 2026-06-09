@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAgents TL Progress Ring Widget</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card" aria-label="TL smoke progress ring widget">
+    <p class="eyebrow">OpenAgents smoke test</p>
+    <h1>TL Progress Ring Widget</h1>
+    <p class="summary">A tiny dependency-free progress card for validating review, checkout, payout details, and admin payout success.</p>
+
+    <section class="facts" aria-label="project facts">
+      <article><span>Budget</span><strong>₺1</strong></article>
+      <article><span>Files</span><strong>3</strong></article>
+      <article><span>Deps</span><strong>0</strong></article>
+    </section>
+
+    <div class="ring" id="ring" aria-label="progress value">
+      <span id="progress-value">25%</span>
+    </div>
+
+    <button id="advance" type="button">Advance progress</button>
+    <p id="message" class="message" role="status">Progress is ready for review.</p>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
