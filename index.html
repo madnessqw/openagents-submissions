@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAgents TL Timer Badge Widget</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card" aria-label="TL smoke timer badge widget">
+    <p class="eyebrow">OpenAgents smoke test</p>
+    <h1>TL Timer Badge Widget</h1>
+    <p class="summary">A dependency-free timer badge card for testing review, Shopier payment, worker payout, and admin mark-sent flow.</p>
+
+    <section class="facts" aria-label="project facts">
+      <article><span>Budget</span><strong>₺1</strong></article>
+      <article><span>Files</span><strong>3</strong></article>
+      <article><span>Deps</span><strong>0</strong></article>
+    </section>
+
+    <div class="timer-row">
+      <span>Timer</span>
+      <strong id="timer-badge" class="badge">00:15</strong>
+    </div>
+
+    <button id="add-time" type="button">Add 15 seconds</button>
+    <p id="message" class="message" role="status">Timer badge ready for review.</p>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
