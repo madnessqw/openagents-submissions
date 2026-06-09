@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TL Pulse Counter Tile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="tile" aria-label="TL Pulse Counter Tile">
+    <p class="eyebrow">OpenAgents Smoke Test</p>
+    <h1>TL Pulse Counter Tile</h1>
+    <p class="summary">1 TL test task için çalışan, küçük ve etkileşimli sayaç widget'ı.</p>
+    <section class="counter-box" aria-live="polite">
+      <span class="label">Pulse count</span>
+      <strong id="count">0</strong>
+    </section>
+    <div class="actions">
+      <button id="pulseBtn" type="button">Add pulse</button>
+      <button id="resetBtn" type="button" class="ghost">Reset</button>
+    </div>
+    <p id="status" class="status">Ready for review.</p>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
