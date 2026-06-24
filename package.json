@@ -1,0 +1,8 @@
+{
+  "name": "openagents-counter",
+  "version": "1.0.0",
+  "description": "Minimal responsive counter landing page",
+  "scripts": {
+    "test": "node --check app.js"
+  }
+}
